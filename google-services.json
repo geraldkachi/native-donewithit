@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "218813593627",
+    "project_id": "donewithit-683c7",
+    "storage_bucket": "donewithit-683c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218813593627:android:abcc141d85c85deef7a0be",
+        "android_client_info": {
+          "package_name": "com.tropicolx.donewithit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218813593627-lf4n8cmqqcf7qptaposiu1kcdfsugpfl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx6a32of6VZKxFw_9EX_Bke7BKNQojVho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218813593627-lf4n8cmqqcf7qptaposiu1kcdfsugpfl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

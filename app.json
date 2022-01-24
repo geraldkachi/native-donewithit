@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "DoneWithIt",
+    "slug": "DoneWithIt",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/icon.png",
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#e63c4b"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tropicolx.donewithit",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.tropicolx.donewithit",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/icon.png",
+        "backgroundColor": "#e63c4b"
+      },
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "A marketplace for selling the stuff you don't need anymore.",
+    "extra": {
+      "bugsnag": {
+        "apiKey": "872324b2eff2705462c31fa7a00afd57"
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
+    },
+    "githubUrl": "https://github.com/TropicolX/DoneWithIt"
+  }
+}

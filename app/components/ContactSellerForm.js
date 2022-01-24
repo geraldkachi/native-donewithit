@@ -1,0 +1,59 @@
+import React from "react";
+import { Alert, Keyboard } from "react-native";
+import * as Notifications from "expo-notifications";
+import * as Yup from "yup";
+
+import { AppForm, AppFormField, SubmitButton } from "./forms";
+import messagesApi from "../api/messages";
+import logger from "../utility/logger";
+
+const validationSchema = Yup.object().shape({
+	message: Yup.string().required().min(1).label("Message"),
+});
+
+function ContactSellerForm({ listing }) {
+	const handleSubmit = async ({ message }, { resetForm }) => {
+		Keyboard.dismiss();
+		try {
+			const result = await messagesApi.send(message, listing.id);
+
+			if (!result.ok) {
+				return Alert.alert(
+					"Error",
+					"Could not send the message to the Seller."
+				);
+			}
+
+			resetForm();
+
+			Notifications.scheduleNotificationAsync({
+				content: {
+					title: "Awesome!",
+					body: "Your message was sent to the seller.",
+				},
+				trigger: null,
+			});
+		} catch (error) {
+			logger.log(error);
+		}
+	};
+
+	return (
+		<AppForm
+			initialValues={{ message: "" }}
+			onSubmit={handleSubmit}
+			validationSchema={validationSchema}
+		>
+			<AppFormField
+				maxLength={255}
+				multiline
+				name="message"
+				numberOfLines={1}
+				placeholder="Message..."
+			/>
+			<SubmitButton title="Contact Seller" />
+		</AppForm>
+	);
+}
+
+export default ContactSellerForm;

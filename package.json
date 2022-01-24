@@ -1,0 +1,53 @@
+{
+	"name": "donewithit",
+	"version": "1.0.0",
+	"main": "node_modules/expo/AppEntry.js",
+	"scripts": {
+		"start": "expo start",
+		"android": "expo start --android",
+		"ios": "expo start --ios",
+		"web": "expo start --web",
+		"eject": "expo eject"
+	},
+	"dependencies": {
+		"@bugsnag/expo": "^7.14.1",
+		"@react-native-async-storage/async-storage": "~1.15.0",
+		"@react-native-community/hooks": "^2.8.1",
+		"@react-native-community/masked-view": "^0.1.11",
+		"@react-native-community/netinfo": "6.0.2",
+		"@react-navigation/bottom-tabs": "^6.0.9",
+		"@react-navigation/native": "^5.9.8",
+		"@react-navigation/stack": "^5.3.5",
+		"apisauce": "^1.1.1",
+		"dayjs": "1.8.28",
+		"expo": "~43.0.2",
+		"expo-app-loading": "~1.2.1",
+		"expo-blur": "~10.0.3",
+		"expo-constants": "~12.1.3",
+		"expo-image-picker": "~11.0.3",
+		"expo-location": "~13.0.4",
+		"expo-notifications": "~0.13.3",
+		"expo-permissions": "~13.0.3",
+		"expo-secure-store": "~11.0.3",
+		"expo-status-bar": "~1.1.0",
+		"formik": "^2.1.4",
+		"jwt-decode": "2.2.0",
+		"lottie-react-native": "4.0.3",
+		"moment": "^2.29.1",
+		"react": "17.0.1",
+		"react-dom": "17.0.1",
+		"react-native": "0.64.3",
+		"react-native-expo-image-cache": "4.1.0",
+		"react-native-gesture-handler": "^1.10.3",
+		"react-native-progress": "4.1.2",
+		"react-native-reanimated": "~2.2.0",
+		"react-native-safe-area-context": "3.3.2",
+		"react-native-screens": "~3.8.0",
+		"react-native-web": "0.17.1",
+		"yup": "^0.28.5"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.12.9"
+	},
+	"private": true
+}
